@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 export const Logo = styled.a`
   padding: 1rem 0;
@@ -32,7 +32,7 @@ export const MenuItem = styled.a`
   color: black;
   transition: all 0.3s ease-in;
   font-size: 0.9rem;
-
+  background: transparent;
   &:hover {
     color: rgb(103, 111, 163);
   }
@@ -66,10 +66,22 @@ export const SearchContainer = styled.form`
   border-radius: 1rem;
 `;
 
-export const SearchIcon = styled(FontAwesomeIcon)`
+
+export const IconBusqueda = styled.img`
   padding: 0.5rem 0.7rem;
   background: transparent;
+  width: 70px;
+  height: 40px;
 `;
+
+export const IconCarrito = styled.img`
+  padding: 0.5rem 0.7rem;
+ 
+  width: 60px;
+  height: 60px;
+`;
+
+
 
 export const SearchInput = styled.input`
   font-size: 1rem;
