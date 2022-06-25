@@ -46,3 +46,10 @@ export const SocialLink = styled.a`
     color: white;
   }
 `;
+
+export const IconGithub = styled.img`
+  padding: 0.5rem 0.7rem;
+  background: transparent;
+  width: 60px;
+  height: 60px;
+`;

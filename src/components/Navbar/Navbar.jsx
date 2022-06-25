@@ -1,6 +1,7 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartPlus, faSearch } from "@fortawesome/free-solid-svg-icons";
+
+import miIconSearch  from '../../assets/iconobusqueda.png'
+import miIconCarrito from '../../assets/carrito.png'
 
 import {
   Logo,
@@ -8,7 +9,8 @@ import {
   MenuItem,
   NavContainer,
   SearchContainer,
-  SearchIcon,
+  IconBusqueda,
+  IconCarrito,
   SearchInput,
 } from "./Navbar.style";
 
@@ -22,10 +24,12 @@ const Navbar = () => {
         <SearchContainer onSubmit={(e) => e.preventDefault()}>
 
           <SearchInput type={"search"} placeholder="Search..." />
-          <SearchIcon icon={faSearch} />
+          
+          <IconBusqueda src={miIconSearch} />
         </SearchContainer>
         <MenuItem href="/">
-          <FontAwesomeIcon icon={faCartPlus} />
+
+          <IconCarrito src={miIconCarrito} />
         </MenuItem>
       </Menu>
     </NavContainer>

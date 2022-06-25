@@ -1,7 +1,7 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { Container, Legend, SocialContainer, SocialLink } from "./Footer.style";
+
+import { Container, Legend, SocialContainer, SocialLink, IconGithub } from "./Footer.style";
+import myIconGithub from "../../assets/gitlogo.png"
 
 const Footer = () => {
   return (
@@ -11,7 +11,8 @@ const Footer = () => {
       </Legend>
       <SocialContainer>
         <SocialLink href="https://github.com/galtax" target={"_blank"}>
-          <FontAwesomeIcon icon={faGithub} />
+
+          <IconGithub src={myIconGithub} />
         </SocialLink>
 
       </SocialContainer>
