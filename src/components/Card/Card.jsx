@@ -1,5 +1,7 @@
 import React from "react";
 import {
+  Button,
+  ButtonContainer,
   CardContainer,
   CardContent,
   CardImage,
@@ -9,7 +11,7 @@ import {
 } from "./Card.style";
 
 const Card = ({ product }) => {
-  const { data, tags } = product;
+  const { data } = product;
 
   return (
     <CardContainer>
@@ -18,13 +20,10 @@ const Card = ({ product }) => {
         <h4>{data.name}</h4>
       </CardTitleContainer>
       <CardContent>$ {data.price} USD</CardContent>
-      {tags.length > 0 ? (
-        <TagsContainer>
-          {tags.map((tag) => (
-            <Tags key={tag}>{tag}</Tags>
-          ))}
-        </TagsContainer>
-      ) : null}
+      <ButtonContainer>
+      <Button data-key={product.id}>View details</Button>
+      <Button isCart={true}>Add to cart</Button>
+      </ButtonContainer>
     </CardContainer>
   );
 };

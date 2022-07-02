@@ -14,10 +14,14 @@ import {
   SearchInput,
 } from "./Navbar.style";
 
-const Navbar = () => {
+const Navbar = ({ stateHandler }) => {
+      function changePage(e){
+        e.preventDefault();
+        stateHandler("home");
+      }
   return (
     <NavContainer>
-      <Logo href="">
+      <Logo href="" onClick={changePage}>
         Galtax <span>  Luxury Furniture</span>
       </Logo>
       <Menu>

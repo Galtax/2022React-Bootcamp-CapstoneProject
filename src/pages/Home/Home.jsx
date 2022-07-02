@@ -3,9 +3,17 @@ import Slider from "../../components/Slider/Slider";
 import Card from "../../components/Card/Card";
 import Category from "../../components/Category/Category";
 
-import { Container, ProductsContainer, Title } from "./Home.style";
+import "swiper/swiper.scss";
+import "swiper/modules/navigation/navigation.scss";
+import "swiper/modules/pagination/pagination.scss";
 
-function Home({ categories, products, banners }) {
+import { Button, Container, ProductsContainer, Title } from "./Home.style";
+
+function Home({ categories, products, banners, stateHandler }) {
+     function changePage(e){
+       e.preventDefault(e);
+       stateHandler("products");
+    }
   return (
     <Container>
       <Slider banners={banners} />
@@ -20,6 +28,9 @@ function Home({ categories, products, banners }) {
         {products.map((product) => (
           <Card key={product.id} product={product} />
         ))}
+      </ProductsContainer>
+      <ProductsContainer>
+         <Button onClick={changePage}>View all Products</Button>
       </ProductsContainer>
     </Container>
   );
