@@ -1,7 +1,7 @@
 {
   "name": "wa-react-2021-q4-capstone-project",
   "version": "0.1.0",
-  "homepage": "/2022React-Bootcamp-CapstoneProject/home",
+  "homepage": "https://galtax.netlify.app/2022React-Bootcamp-CapstoneProject",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
