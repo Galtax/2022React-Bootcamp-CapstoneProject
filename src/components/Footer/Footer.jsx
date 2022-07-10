@@ -1,13 +1,17 @@
-import React from "react";
-
-import { Container, Legend, SocialContainer, SocialLink, IconGithub } from "./Footer.style";
+import React from 'react';
+import PropTypes from 'prop-types';
+import {  FooterMain
+        , Legend
+        , SocialContainer
+        , SocialLink
+        , IconGithub } from './FooterMain.styled'
 import myIconGithub from "../../assets/gitlogo.png"
 
-const Footer = () => {
+function Footer({ text }) {
   return (
-    <Container>
+    <FooterMain>
       <Legend>
-        Ecommerce created during Wizeline’s Academy React Bootcamp
+        {text}
       </Legend>
       <SocialContainer>
         <SocialLink href="https://github.com/galtax" target={"_blank"}>
@@ -16,8 +20,12 @@ const Footer = () => {
         </SocialLink>
 
       </SocialContainer>
-    </Container>
+    </FooterMain>
   );
+}
+
+Footer.propTypes = {
+  text: PropTypes.string.isRequired,
 };
 
 export default Footer;
