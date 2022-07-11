@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {
-  bluePrince, white, 
+  bluePrince,  
 } from '../../utils/constant.styles';
 
 export const HeaderMain = styled.header`
@@ -39,6 +39,7 @@ export const Name = styled.h1`
   height: 100%;
   display: flex;
   align-items: center;
+  text-align: center;
 
   @media screen and (max-width: 800px) {
     justify-content: center;
@@ -49,31 +50,6 @@ export const Name = styled.h1`
     justify-content: center;
     text-indent: 0;
     width: fit-content;
-  }
-`;
-
-export const ButtonCart = styled.button`
-  margin: 0 4% 0;
-  outline: none;
-  background: none;
-  border: none;
-  path {
-      fill: ${bluePrince};
-    }
-  &:hover {
-    cursor: pointer;
-    path {
-      fill: ${white};
-    }
-  }
-
-  & > svg {
-    height: 2.5rem;
-    width: 2.5rem;
-  }
-
-  @media screen and (max-width: 800px) {
-    margin: 2rem auto 0;
   }
 `;
 
