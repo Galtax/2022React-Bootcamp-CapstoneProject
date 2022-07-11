@@ -1,11 +1,13 @@
 export const API_BASE_URL = 'https://wizeline-academy.cdn.prismic.io/api/v2';
 
 export const ROUTES = {
-  base: '/2022React-Bootcamp-CapstoneProject/',
+  base: '/',
   home: '/2022React-Bootcamp-CapstoneProject/home',
   productList: '/product',
   productDetail: '/product',
   searchResults: '/search',
+  shoppingCart: '/cart',
+  checkout: '/checkout',
 }
 
 export const URLS = {

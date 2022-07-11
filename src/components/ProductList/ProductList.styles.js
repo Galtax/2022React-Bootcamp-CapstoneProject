@@ -7,9 +7,10 @@ import {
   whiteApple,
   yellowMain } from "../../utils/constant.styles";
 
-export const ProductListMain = styled.div`
-  margin: 2.5rem auto;
-  display: flex;
+export const ProductListMain = styled.main`
+  display:flex;
+  margin: 0.5rem auto;
+  margin-top: 13.5rem;
   flex-flow: row;
   width: 135em;
   height: fit-content;
@@ -25,9 +26,11 @@ export const ProductListMain = styled.div`
 `;
 
 export const AsideBar = styled.aside`
-  display: flex;
+  display:flex ;
   flex-flow: column;
   width: 8.5rem;
+  margin-top: 2.0rem;
+
   @media screen and (max-width: 660px){
     flex-flow: column wrap;
     margin: auto;

@@ -4,7 +4,7 @@ export const HomeMain = styled.main`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 3rem 5rem;
+  margin: 13rem 5rem;
   max-width: 100%;
   min-height: 95vh;
 

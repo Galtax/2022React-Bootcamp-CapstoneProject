@@ -22,7 +22,7 @@ export function useGeneralFetch(url, searchInput, reload = false, setReload) {
 
         const urlParams = url.replace('{apiRef}', apiRef).replace('{searchTerm}', searchInput);
 
-        console.log(urlParams);
+        //console.log(urlParams);
 
         const response = await fetch(
           `${API_BASE_URL}${urlParams}`,
